@@ -2,8 +2,11 @@
 
 import subprocess
 import time
+import os
 
-while True:
-  time.sleep(5)
-  p = subprocess.Popen(["timeline.foto.sh"], stdout=subprocess.PIPE)  
+# directorio donde se encuentra timeline.foto.sh
+dir = os.path.join('tu directorio','timeline.foto.sh')
+
+while True:  
+  p = subprocess.Popen([dir], stdout=subprocess.PIPE)  
   time.sleep(10)
