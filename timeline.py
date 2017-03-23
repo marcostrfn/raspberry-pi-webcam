@@ -3,12 +3,7 @@
 import subprocess
 import time
 
-
 while True:
-
-  time.sleep(5) # delays for 5 seconds
-  p = subprocess.Popen(["/home/pi/bin/timeline.foto.sh"], stdout=subprocess.PIPE)
-  # print p.communicate()
+  time.sleep(5)
+  p = subprocess.Popen(["timeline.foto.sh"], stdout=subprocess.PIPE)  
   time.sleep(10)
-
-
